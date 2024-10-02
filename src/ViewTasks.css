@@ -1,0 +1,101 @@
+/* ViewTasks.css */
+
+body {
+    background-color: #f0f4f8; /* Light background for the entire page */
+    font-family: Arial, sans-serif; /* Clean font for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.task-container {
+    max-width: 800px; /* Set a maximum width for the task container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding for spacing */
+    padding-top: 140px;
+}
+
+.welcome-message {
+    text-align: center; /* Center align the heading */
+    color: #333; /* Darker color for better visibility */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.btn-container {
+    display: flex; /* Flexbox for button alignment */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.btn {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background color and scale */
+    font-weight: bold; /* Make text bold for emphasis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.imp-task {
+    background-color: #007bff; /* Primary button color */
+}
+
+.less-imp {
+    background-color: #6c757d; /* Secondary button color */
+}
+
+/* Change button color when clicked */
+.imp-task:active, .less-imp:active {
+    background-color: #0056b3; /* Darker blue when active */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+.less-imp:active {
+    background-color: #5a6268; /* Darker gray when active */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    opacity: 0.9; /* Slightly fade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.card-list {
+    display: flex; /* Use flexbox for card layout */
+    flex-wrap: wrap; /* Allow cards to wrap onto new lines */
+    justify-content: space-between; /* Space between cards */
+}
+
+.task-card {
+    background-color: white; /* White background for each card */
+    border: 1px solid #ddd; /* Light border around card */
+    border-radius: 8px; /* Rounded corners for cards */
+    padding: 20px; /* Padding inside the card */
+    margin: 10px; /* Margin between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    flex: 1 1 30%; /* Flex-grow, shrink, and basis for card size */
+    min-width: 250px; /* Minimum width for cards */
+    transition: box-shadow 0.3s, transform 0.2s; /* Smooth transition for shadow and scale */
+}
+
+.task-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-4px); /* Lift effect on hover */
+}
+
+.task-title {
+    font-size: 1.2em; /* Larger font size for title */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.task-description {
+    margin-bottom: 10px; /* Space below description */
+}
+
+.task-info {
+    display: block; /* Display info on a new line */
+    color: #666; /* Lighter color for task info */
+    margin-top: 5px; /* Space above info */
+}

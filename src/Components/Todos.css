@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding-top: -10px;
+}
+
+.container p {
+  margin: 0; /* Removes default margin */
+  padding: 0;
+}
+
+.arrdata {
+  margin-top: -200px; /* Add some space at the top of the todo list */
+}

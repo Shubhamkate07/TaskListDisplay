@@ -1,0 +1,115 @@
+/* Container for the TaskList component */
+.task-list-container {
+    max-width: 600px; /* Maximum width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(135deg, #ffffff, #e9ecef); /* Subtle gradient */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+}
+
+/* Heading styles */
+.task-list-container h4 {
+    text-align: center; /* Center the heading */
+    color: #343a40; /* Darker text color */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Arial', sans-serif; /* Font style */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column; /* Stack the form elements */
+}
+
+/* Input and textarea styles */
+input[type="text"],
+textarea {
+    padding: 12px; /* Increased padding */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: border-color 0.3s; /* Smooth border color change */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styles */
+button {
+    padding: 12px; /* Increased padding */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background color change and scaling */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Task list styles */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    padding: 15px; /* Padding for each list item */
+    margin: 10px 0; /* Space between items */
+    background-color: #f1f3f5; /* Light gray background for tasks */
+    border-left: 5px solid #007bff; /* Blue left border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+li:hover {
+    background-color: #e2e6ea; /* Darker gray on hover */
+}
+
+/* Strong text within list items */
+li strong {
+    color: #0056b3; /* Darker blue for task titles */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .task-list-container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    input[type="text"],
+    textarea {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+    }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #f4f4f4, #e9e9e9); /* Gradient background */
+  background-size: 100% 300px; /* Set the gradient size */
+  background-position: 0% 100%; /* Move the gradient to the bottom */
+}
+
+.form-container {
+  background-color: white; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

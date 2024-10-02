@@ -1,0 +1,7 @@
+@media (min-width: 320px) {
+    /* Adjustments for devices between 320px and 360px */
+    .container h4{
+        padding-left: 260px;
+        padding-top: 30px;
+    }
+  }
